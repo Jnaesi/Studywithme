@@ -6,13 +6,14 @@
     <input type="text" name="q" placeholder="Search Rooms.."/>
 </form>
 
- <!-- Logged In -->
- {% if request.user.is_authenticated %}
- <a href="{% url 'logout' %}">Logout</a>
+{% if request.user.is_authenticated %}
+<p>Hello {{request.user}}</p>
 
- {% else %}
+<a href="{% url 'logout' %}">Logout</a>
 
- <a href="{% url 'login' %}">Login</a>
- {% endif %}
+{% else %}
+
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
 
 <hr>
