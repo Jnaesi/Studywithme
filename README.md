@@ -1,12 +1,12 @@
 # StudyWithMe
 ## Introduction
-StudyWithMe is a website built in Django using Python, CSS, HTML and Javascript. It enables users to create posts with other users from around the world. It is targetted towards users who enjoy having a discussions about different topics and would like to share their ideas with others. Users have the ability to create categories, create posts, delete posts, edit posts, and create their own profile. They can upload images for use on their posts or on their profile, link their personal social media accounts and websites, and like other users posts.
+StudyWithMe is a website built in Django using Python, CSS, HTML and Javascript. It enables users to create posts with other users from around the world. It is targetted towards users who enjoy having a discussions about different topics and would like to share their ideas with others. Users have the ability to create categories, create posts, delete posts, edit posts, and create their own profile. They can upload images for use on their profiles.
 
 This is the fifth project for the Code Institute Diploma in Software Development.
 
 The site provides role based permissions for users to interact with a central dataset. It includes user authentication, and Full CRUD functionality for Posts, Comments, Categories, and User Profiles.
 
-<img src = '' alt = "Homepage of the website"> </img>
+<img src = 'deployment/studywithme.jpg' alt = "Homepage of the website"> </img>
 
 ## Table of Contents
 ## Table of Contents
@@ -25,7 +25,7 @@ The site provides role based permissions for users to interact with a central da
 
 ## UX
 ### The Strategy Plane
-*  TheBlog is intended to be a friendly community site for users to create and share their thoughts and discussions with others. Users will also be able to find posts created by other users from around the world. 
+*  StudyWithMe is intended to be a friendly community site for users to create and share their thoughts and discussions with others. Users will also be able to find rooms created by other users from around the world. 
 ##### The Sites Ideal User
 * Anyone looking to share their thoughts on different subjects with others
 * Someone looking to expand their knowledge
@@ -39,22 +39,8 @@ The site provides role based permissions for users to interact with a central da
 
 #### User Story
 
-10 US were created which were then further developed into 18 User Stories. The details on each User story, [here](https://github.com/users/Jnaesi/projects/1/views/1)
-
-1. Initial Django setup 
-2. 
-3. 
-4. 
-5.
-6. 
-7. 
-8. 
-9.
-10. 
-etc.
-
 #### Site Goals
-* To provide users with a fun and simple layout 
+* To provide users with a simple layout.
 * To ensure the site is fully accessible on desktop and touch enabled devices
 * To ensure the site is fully compliant with keyboard commands and screen readers
 
@@ -64,17 +50,17 @@ etc.
 
 * User Profile - Create, Read, Update and Delete
 * Posts - Users can create, read, update and delete their own Posts
-* Other Users Posts - Users can read, like, and comment
+* Other Users Posts - Users can read, Comment and Join rooms.
 * Profiles - Users can read other users profiles
 * Users can login to their account, change their password or their names.
 * Users can reset their password if they forget it
 * Users can logout of their account
-* Users need to be registered and logged in to add a post and like functionality.
+* Users need to be registered and logged in to add a room or topic.
 * Responsive Design - the site needs to be fully responsive to cover the wide variety of devices users may use to access the site
 #### The Skeleton Plane
 I used Adobe Photoshop to produce wireframes of how the site would look across different devices.
 
-<img src="deployment/media/wireframe_mockup.jpg" alt="drawing" width="800" height="600"/>
+<img src="deployment/wireframe.png" alt="drawing" width="800" height="600"/>
 
 
 # Features
@@ -85,25 +71,25 @@ The site is designed with a central layout that the HTML inserts the relevant CS
 There will be an form added where you can order food that has different delivery options.
 
 #### Main Page
-<img src = 'deployment/media/' alt = "Homepage of the website" width=400> </img>
+<img src = 'deployment/front.jpg' alt = "Homepage of the website" width=800> </img>
 
-#### Add Category Page
-<img src = 'deployment/media/' alt = "Second part" width=400> </img>
+#### Profile Page
+<img src = 'deployment/profile.jpg' alt = "form" width=800> </img>
 
-#### Add Post Page
-<img src = 'deployment/media/' alt = "form" width=400> </img>
+#### Rooms Page
 
-#### Comment Page
+<img src = 'deployment/rooms.jpg' alt = "form2" width=800> </img>
 
-<img src = 'deployment/media/' alt = "form2" width=400> </img>
+#### Topics Page
 
-#### Edit Profile Page
+<img src = 'deployment/topics.jpg' alt = "form3" width=800> </img>
 
-<img src = 'deployment/media/' alt = "form2" width=400> </img>
+#### Settings Page
 
-#### Update Post Page
+<img src = 'deployment/settings.jpg' alt = "form4" width=800> </img>
 
-<img src = 'deployment/media/' alt = "form2" width=400> </img>
+#### Mobile Page
+<img src = 'deployment/mobileresponsive.jpg' alt = "mobile" width=250> </img>
 
 
 #### Validator Testing
@@ -111,18 +97,13 @@ There will be an form added where you can order food that has different delivery
   * Document checking completed. No errors or warnings to show.
 
 * Lighthouse 
-  * The lighthouse report gave a great score of 97
+  * The lighthouse report gave a great score of 94
   
-  <img src="deployment/media/" alt="Refresh" width="500"/>
+  <img src="deployment/lighthouse.jpg" alt="Refresh" width="500"/>
 
 * Python
-  * There was no issues with python code when i ran it in the Snyk.io app
 
-  The Snyk platform quickly finds and fixes security issues in proprietary code, open source dependencies, container images, and cloud infrastructure so businesses can build security directly into their continuous development process.
-
-  Checked all python files with 100% pass rate while testing them individually on https://www.pythonchecker.com/ aswell.
-  
-  <img src="deployment/media/" alt="Refresh" width="500"/>
+  Have not had time to test anything.
 #### Notable Bugs
 Edit profile has a bug when updating it that i have not have time to fix yet.
 
@@ -170,7 +151,7 @@ The site was deployed via Heroku, and the live link can be found here - [StudyWi
 To deploy the project through Heroku I followed these steps:
 * Sign up / Log in to [Heroku](https://www.heroku.com/)
 * From the main Heroku Dashboard page select 'New' and then 'Create New App'
-* Give the project a name - I entered theblogpp4 and select a suitable region, then select create app. The name for the app must be unique.
+* Give the project a name - I entered Studywithme and select a suitable region, then select create app. The name for the app must be unique.
 * This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
 * Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
 * Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
